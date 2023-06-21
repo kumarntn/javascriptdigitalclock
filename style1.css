@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins&display=swap');
+
+@font-face {
+    font-family: digital-7;
+    src: url('/digital-7/digital-7.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0984e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    gap: 50px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 500px;
+}
+
+.frame {
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    border: 30px solid #0984e3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-size: 95px;
+    text-align: center;
+    line-height: 180px;
+
+}
+
+.clock {
+    font-family: digital-7;
+    color: #ffffff;
+    text-shadow: 0 0 20px var(--light-color);
+    position: relative;
+}
+
+
+
+.clock::before {
+    content: ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--light-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: blur(50px);
+
+}
+
+:root {
+    --light-color: rgb(0, 175, 244);
+}

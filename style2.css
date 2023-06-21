@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins&display=swap');
+
+@font-face {
+    font-family: digital-7;
+    src: url('/digital-7/digital-7.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    gap: 50px;
+    color: #fff;
+}
+
+.clock {
+
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.clock div {
+    font-family: digital-7;
+    width: 20px;
+
+    text-align: center;
+    font-size: 35px;
+
+
+}
+
+.txt {
+    margin-left: 10px;
+}
+
+.hr::before,
+.mi::before,
+.se::before {
+    content: '8';
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+}
